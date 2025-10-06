@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/themes.js"></script>
+
+    <title>Calculadora IMC Javascript | github.com/AndersonLeandrog</title>
+
+</head>
+
+<body>
+
+    <div class="config" onclick="ligarModoEscuro()" ondblclick="desligarModoEscuro()">
+        <img src="https://image.flaticon.com/icons/png/512/5225/5225707.png" title="Clique duas vezes para desabilitar o modo escuro." width="23px" height="23px">
+    </div>
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="fundoH1">
+                <h1>IMCALC{x}</h1>
+            </div>
+
+            <input type="text" id="pesoKg" placeholder="Peso">
+            <input type="text" id="alturaM" placeholder="Altura">
+            <button id="calcular" onclick="calcularIMC()">Calcular</button>
+            <div id="situacao">Classificado c/</div>
+            <div id="mostrar">*</div>
+
+            <table>
+                <tr>
+                    <td style="font-weight: bold;">IMC</td>
+                    <td style="font-weight: bold;">Situação</td>
+                </tr>
+
+                <tr>
+                    <td>maior que 40</td>
+                    <td>Obesidade Grau 3</td>
+                </tr>
+
+                <tr>
+                    <td>entre 35 e 40</td>
+                    <td>Obesidade Grau 2</td>
+                </tr>
+
+                <tr>
+                    <td>entre 30 e 35</td>
+                    <td>Obesidade Grau 1</td>
+                </tr>
+
+                <tr>
+                    <td>entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+
+                <tr>
+                    <td>entre 18.5 e 24,9</td>
+                    <td>Normal</td>
+                </tr>
+
+                <tr>
+                    <td>menor que 18,5</td>
+                    <td>Magreza</td>
+                </tr>
+            </table>
+
+            <div class="info">
+                <div class="title">
+                    Siga nas redes socias!
+                </div>
+
+                <a href="https://github.com/AndersonLeandrog" target="_blank">
+                    <div class="ico">
+                        <img src="https://image.flaticon.com/icons/png/512/1322/1322053.png" width="32px" height="32px"/>
+                    </div>
+                </a>
+                
+                <a href="https://br.linkedin.com/" target="_blank">
+                    <div class="ico">
+                        <img src="https://image.flaticon.com/icons/png/512/1384/1384889.png" width="32px" height="32px"/>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/AndersonLetw" target="_blank">
+                    <div class="ico">
+                        <img src="https://image.flaticon.com/icons/png/512/1322/1322042.png" width="32px" height="32px"/>
+                    </div>
+                </a>    
+
+                <a href="https://www.youtube.com" target="_blank">
+                    <div class="ico">
+                        <img src="https://image.flaticon.com/icons/png/512/1322/1322030.png" width="32px" height="32px"/>
+                    </div>
+                </a>
+            </div>
+        </div>    
+    </div>
+</body>
+
+</html>
